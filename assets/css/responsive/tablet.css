@@ -1,0 +1,39 @@
+/* Responsive para tablet */
+@media (max-width: 991px) {
+  :root {
+    --header-height: 70px;
+  }
+  
+  .container {
+    max-width: 720px;
+  }
+  
+  .grid-3, .grid-4 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  .skills-categories {
+    grid-template-columns: 1fr;
+  }
+  
+  .contact-grid {
+    grid-template-columns: 1fr;
+    gap: var(--spacing-xl);
+  }
+  
+  .hero-visual {
+    display: none;
+  }
+  
+  .nav-desktop {
+    display: none;
+  }
+  
+  .menu-toggle {
+    display: block;
+  }
+  
+  .brand {
+    font-size: var(--font-md);
+  }
+}

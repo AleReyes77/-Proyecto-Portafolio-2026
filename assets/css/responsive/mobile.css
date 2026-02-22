@@ -1,0 +1,52 @@
+/* Responsive para móviles */
+@media (max-width: 767px) {
+  :root {
+    --header-height: 60px;
+  }
+  
+  .container {
+    max-width: 100%;
+  }
+  
+  .section {
+    padding: var(--spacing-xxl) 0;
+  }
+  
+  .grid-2, .grid-3, .grid-4 {
+    grid-template-columns: 1fr;
+  }
+  
+  .about-stats {
+    grid-template-columns: 1fr;
+  }
+  
+  .projects-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .hero-title {
+    font-size: clamp(2.5rem, 6vw, 3.5rem);
+  }
+  
+  .hero-subtitle {
+    font-size: var(--font-lg);
+  }
+  
+  .logo-generator {
+    padding: var(--spacing-xl);
+  }
+  
+  .timeline::before {
+    left: 20px;
+  }
+  
+  .timeline-item {
+    padding-left: 60px;
+  }
+  
+  .timeline-date {
+    width: 40px;
+    padding: var(--spacing-xs);
+    font-size: var(--font-xs);
+  }
+}

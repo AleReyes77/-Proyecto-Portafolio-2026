@@ -1,0 +1,14 @@
+/* Responsive para desktop */
+@media (max-width: 1199px) {
+  .container {
+    max-width: 960px;
+  }
+  
+  .grid-4 {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  
+  .about-stats {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}

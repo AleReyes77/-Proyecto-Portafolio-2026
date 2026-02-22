@@ -1,0 +1,371 @@
+/* Archivo principal que importa todos los demás */
+@import url('base/_reset.css');
+@import url('base/_variables.css');
+@import url('base/_typography.css');
+
+@import url('components/_buttons.css');
+@import url('components/_cards.css');
+@import url('components/_forms.css');
+@import url('components/_modals.css');
+
+@import url('layout/_header.css');
+@import url('layout/_footer.css');
+@import url('layout/_grid.css');
+@import url('layout/_navigation.css');
+
+@import url('sections/_hero.css');
+@import url('sections/_about.css');
+@import url('sections/_skills.css');
+@import url('sections/_projects.css');
+@import url('sections/_experience.css');
+@import url('sections/_contact.css');
+@import url('sections/_logo-generator.css');
+
+@import url('utils/_animations.css');
+@import url('utils/_utilities.css');
+@import url('utils/_accessibility.css');
+
+@import url('responsive/_mobile.css');
+@import url('responsive/_tablet.css');
+@import url('responsive/_desktop.css');
+
+/* Estilos adicionales que no estaban en otros archivos */
+
+/* 5.3 Badges */
+.badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--spacing-xs);
+  padding: var(--spacing-xs) var(--spacing-sm);
+  border-radius: var(--radius-full);
+  font-size: var(--font-xs);
+  font-weight: 600;
+  line-height: 1;
+  white-space: nowrap;
+  background-color: var(--bg-elevated);
+  border: 1px solid var(--border-light);
+  color: var(--text-secondary);
+}
+
+.badge-primary {
+  background: var(--gradient-primary);
+  color: white;
+  border: 0;
+}
+
+.badge-secondary {
+  background: var(--gradient-secondary);
+  color: white;
+  border: 0;
+}
+
+.badge-success {
+  background-color: var(--brand-success);
+  color: white;
+  border: 0;
+}
+
+.badge-warning {
+  background-color: var(--brand-warning);
+  color: white;
+  border: 0;
+}
+
+.badge-error {
+  background-color: var(--brand-error);
+  color: white;
+  border: 0;
+}
+
+/* 10. BACKGROUNDS DECORATIVOS */
+.bg-blob {
+  position: fixed;
+  inset: auto -10% -10% auto;
+  width: 620px;
+  height: 620px;
+  background: radial-gradient(circle at 30% 30%, rgba(109, 93, 255, 0.45), transparent 60%), radial-gradient(circle at 70% 70%, rgba(0, 212, 255, 0.35), transparent 60%), radial-gradient(circle at 50% 90%, rgba(255, 122, 217, 0.35), transparent 55%);
+  filter: blur(60px);
+  opacity: 0.6;
+  pointer-events: none;
+  z-index: -1;
+  animation: float 18s ease-in-out infinite;
+}
+
+.bg-blob:nth-of-type(2) {
+  inset: -10% auto auto -10%;
+  animation-duration: 24s;
+}
+
+.bg-pattern {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: 
+    radial-gradient(circle at 10% 20%, rgba(109, 93, 255, 0.05) 0%, transparent 20%),
+    radial-gradient(circle at 90% 80%, rgba(0, 212, 255, 0.05) 0%, transparent 20%),
+    radial-gradient(circle at 50% 50%, rgba(255, 122, 217, 0.05) 0%, transparent 20%);
+  pointer-events: none;
+  z-index: -1;
+}
+
+/* 11. SCROLLBAR PERSONALIZADA */
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--bg-secondary);
+  border-radius: var(--radius-full);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--gradient-primary);
+  border-radius: var(--radius-full);
+  border: 2px solid var(--bg-secondary);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--gradient-secondary);
+}
+
+/* 14. TOAST NOTIFICATIONS */
+.toast-container {
+  position: fixed;
+  bottom: var(--spacing-lg);
+  right: var(--spacing-lg);
+  z-index: var(--z-index-tooltip);
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-sm);
+  max-width: 400px;
+}
+
+.toast {
+  background: var(--bg-secondary);
+  border: 1px solid var(--border-light);
+  border-radius: var(--radius-medium);
+  padding: var(--spacing-md) var(--spacing-lg);
+  box-shadow: var(--shadow-hard);
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-md);
+  transform: translateX(100%);
+  opacity: 0;
+  transition: all var(--transition-medium);
+}
+
+.toast.show {
+  transform: translateX(0);
+  opacity: 1;
+}
+
+.toast-icon {
+  width: 24px;
+  height: 24px;
+  border-radius: var(--radius-full);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.toast-success .toast-icon {
+  background-color: var(--brand-success);
+  color: white;
+}
+
+.toast-error .toast-icon {
+  background-color: var(--brand-error);
+  color: white;
+}
+
+.toast-warning .toast-icon {
+  background-color: var(--brand-warning);
+  color: white;
+}
+
+.toast-info .toast-icon {
+  background-color: var(--brand-info);
+  color: white;
+}
+
+.toast-close {
+  margin-left: auto;
+  background: transparent;
+  border: none;
+  color: var(--text-secondary);
+  cursor: pointer;
+  width: 24px;
+  height: 24px;
+  border-radius: var(--radius-full);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all var(--transition-fast);
+}
+
+.toast-close:hover {
+  background-color: var(--bg-tertiary);
+  color: var(--text-primary);
+}
+
+/* 15. LOADING STATES */
+.loading {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.loading-spinner {
+  width: 20px;
+  height: 20px;
+  border: 2px solid var(--border-light);
+  border-top-color: var(--brand-primary);
+  border-radius: var(--radius-full);
+  animation: spinner-rotate 0.8s linear infinite;
+}
+
+@keyframes spinner-rotate {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.loading-content {
+  margin-left: var(--spacing-sm);
+}
+
+/* 16. DARK/LIGHT MODE TOGGLE */
+.theme-toggle {
+  background: transparent;
+  border: 1px solid var(--border-light);
+  border-radius: var(--radius-full);
+  width: 50px;
+  height: 26px;
+  position: relative;
+  cursor: pointer;
+  transition: all var(--transition-fast);
+}
+
+.theme-toggle::before {
+  content: '';
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  width: 20px;
+  height: 20px;
+  border-radius: var(--radius-full);
+  background: var(--gradient-primary);
+  transition: transform var(--transition-medium);
+}
+
+[data-theme="dark"] .theme-toggle::before {
+  transform: translateX(0);
+}
+
+[data-theme="light"] .theme-toggle::before {
+  transform: translateX(24px);
+}
+
+.theme-toggle-icons {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 var(--spacing-xs);
+  pointer-events: none;
+}
+
+.theme-toggle-icons i {
+  font-size: 12px;
+  color: var(--text-secondary);
+  z-index: 1;
+}
+
+/* 18. CUSTOM SCROLL REVEAL */
+.reveal {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.reveal.active {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.reveal-delay-1 {
+  transition-delay: 0.1s;
+}
+
+.reveal-delay-2 {
+  transition-delay: 0.2s;
+}
+
+.reveal-delay-3 {
+  transition-delay: 0.3s;
+}
+
+.reveal-delay-4 {
+  transition-delay: 0.4s;
+}
+
+.reveal-delay-5 {
+  transition-delay: 0.5s;
+}
+
+/* 19. PARTICLE SYSTEM */
+.particles-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 1;
+}
+
+.particle {
+  position: absolute;
+  border-radius: var(--radius-full);
+  background: var(--gradient-primary);
+  animation: particle-float linear infinite;
+}
+
+@keyframes particle-float {
+  from {
+    transform: translateY(0) rotate(0deg);
+  }
+  to {
+    transform: translateY(-100vh) rotate(360deg);
+  }
+}
+
+/* 20. CUSTOM SELECT */
+.select-wrapper {
+  position: relative;
+}
+
+.select-wrapper::after {
+  content: '▼';
+  position: absolute;
+  top: 50%;
+  right: var(--spacing-md);
+  transform: translateY(-50%);
+  pointer-events: none;
+  color: var(--text-secondary);
+  font-size: var(--font-sm);
+}
+
+.custom-select {
+  appearance: none;
+  padding-right: calc(var(--spacing-md) * 3);
+}

@@ -1,0 +1,1076 @@
+<!DOCTYPE html>
+<html lang="es" data-theme="dark">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>NovaVisionWeb | Desarrollador Full‑Stack Senior — Portafolio 2026</title>
+  <meta name="description" content="Portafolio 2026 de NovaVisionWeb — Desarrollador Full‑Stack Senior con 10+ años de experiencia. Especialista en React, Vue.js, Node.js, TypeScript y arquitecturas cloud." />
+  <meta name="keywords" content="NovaVisionWeb, desarrollador full stack, senior, React, Vue.js, Node.js, TypeScript, JavaScript, Nicaragua, freelance, AWS, Docker, arquitectura software" />
+  <meta name="author" content="NovaVisionWeb" />
+  <meta property="og:title" content="NovaVisionWeb | Desarrollador Full‑Stack Senior — Portafolio 2026" />
+  <meta property="og:description" content="10+ años construyendo productos digitales escalables. Arquitectura cloud, UI/UX premium y rendimiento óptimo." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=1200" />
+  <meta property="og:url" content="https://novavisionweb.com" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:creator" content="@novavisionweb" />
+  <link rel="canonical" href="https://novavisionweb.com" />
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ccircle cx='50' cy='50' r='45' fill='%230078d4'/%3E%3Cpath fill='%23fff' d='M30,30 L70,30 L70,70 L30,70 Z M40,40 L60,40 L60,60 L40,60 Z'/%3E%3C/svg%3E" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <link rel="stylesheet" href="css/styles.css">
+  <!-- Base -->
+<link rel="stylesheet" href="assets/css/base/reset.css">
+<link rel="stylesheet" href="assets/css/base/variables.css">
+<link rel="stylesheet" href="assets/css/base/typography.css">
+
+<!-- Components -->
+<link rel="stylesheet" href="assets/css/components/buttons.css">
+<link rel="stylesheet" href="assets/css/components/cards.css">
+<link rel="stylesheet" href="assets/css/components/forms.css">
+<link rel="stylesheet" href="assets/css/components/modals.css">
+
+<!-- Layout -->
+<link rel="stylesheet" href="assets/css/layout/header.css">
+<link rel="stylesheet" href="assets/css/layout/footer.css">
+<link rel="stylesheet" href="assets/css/layout/grid.css">
+<link rel="stylesheet" href="assets/css/layout/navigation.css">
+
+<!-- Responsive -->
+<link rel="stylesheet" href="assets/css/responsive/mobile.css">
+<link rel="stylesheet" href="assets/css/responsive/tablet.css">
+<link rel="stylesheet" href="assets/css/responsive/desktop.css">
+
+<!-- Sections -->
+<link rel="stylesheet" href="assets/css/sections/hero.css">
+<link rel="stylesheet" href="assets/css/sections/about.css">
+<link rel="stylesheet" href="assets/css/sections/skills.css">
+<link rel="stylesheet" href="assets/css/sections/projects.css">
+<link rel="stylesheet" href="assets/css/sections/experience.css">
+<link rel="stylesheet" href="assets/css/sections/contact.css">
+<link rel="stylesheet" href="assets/css/sections/logo-generator.css">
+
+<!-- Utilities -->
+<link rel="stylesheet" href="assets/css/utilities/accessibility.css">
+<link rel="stylesheet" href="assets/css/utilities/animations.css">
+<link rel="stylesheet" href="assets/css/utilities/spacing.css">
+<link rel="stylesheet" href="assets/css/utilities/utils.css">
+<link rel="stylesheet" href="assets/css/utilities/styles.css">
+</head>
+<body>
+  <!-- Skip to content link for accessibility -->
+  <a href="#main-content" class="skip-to-content">Saltar al contenido principal</a>
+
+  <!-- Background decorative elements -->
+  <div class="bg-blob"></div>
+  <div class="bg-blob"></div>
+  <div class="bg-pattern"></div>
+
+  <!-- Floating logos container (for generated logos) -->
+  <div id="floatingLogos" class="floating-logos-container"></div>
+
+  <!-- Header/Navigation -->
+  <header class="header" id="header">
+    <div class="container header-container">
+      <!-- Brand Logo and Name -->
+      <a href="#home" class="brand" aria-label="NovaVisionWeb - Inicio">
+        <div class="brand-logo" id="brandLogo">
+          <!-- Logo image can be added here -->
+          <span>NV</span>
+        </div>
+        <span>NovaVisionWeb</span>
+      </a>
+
+      <!-- Desktop Navigation -->
+      <nav class="nav-desktop" aria-label="Navegación principal">
+        <ul class="nav-list">
+          <li class="nav-item"><a href="#home" class="nav-link active">Inicio</a></li>
+          <li class="nav-item"><a href="#about" class="nav-link">Acerca</a></li>
+          <li class="nav-item"><a href="#skills" class="nav-link">Habilidades</a></li>
+          <li class="nav-item"><a href="#projects" class="nav-link">Proyectos</a></li>
+          <li class="nav-item"><a href="#experience" class="nav-link">Experiencia</a></li>
+          <li class="nav-item"><a href="#contact" class="nav-link">Contacto</a></li>
+        </ul>
+      </nav>
+
+      <!-- Desktop Actions -->
+      <div class="nav-actions">
+        <!-- Theme Toggle -->
+        <button class="theme-toggle" id="themeToggle" aria-label="Cambiar tema">
+          <div class="theme-toggle-icons">
+            <i class="fas fa-moon"></i>
+            <i class="fas fa-sun"></i>
+          </div>
+        </button>
+      <!-- Mobile Menu Toggle -->
+      <button class="menu-toggle" id="menuToggle" aria-label="Menú de navegación" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+
+    <!-- Mobile Navigation -->
+    <div class="nav-overlay" id="navOverlay"></div>
+    <div class="nav-mobile" id="navMobile">
+      <div class="nav-mobile-header">
+        <div class="brand">
+          <div class="brand-logo">
+            <span>NV</span>
+          </div>
+          <span>NovaVisionWeb</span>
+        </div>
+        <button class="menu-toggle active" id="menuClose" aria-label="Cerrar menú">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+      
+      <nav aria-label="Navegación móvil">
+        <ul class="nav-mobile-list">
+          <li class="nav-mobile-item"><a href="#home" class="nav-mobile-link active">Inicio</a></li>
+          <li class="nav-mobile-item"><a href="#about" class="nav-mobile-link">Acerca</a></li>
+          <li class="nav-mobile-item"><a href="#skills" class="nav-mobile-link">Habilidades</a></li>
+          <li class="nav-mobile-item"><a href="#projects" class="nav-mobile-link">Proyectos</a></li>
+          <li class="nav-mobile-item"><a href="#experience" class="nav-mobile-link">Experiencia</a></li>
+          <li class="nav-mobile-item"><a href="#contact" class="nav-mobile-link">Contacto</a></li>
+        </ul>
+      </nav>
+      
+      <div class="nav-mobile-actions">
+        <button class="theme-toggle" id="themeToggleMobile" aria-label="Cambiar tema">
+          <div class="theme-toggle-icons">
+            <i class="fas fa-moon"></i>
+            <i class="fas fa-sun"></i>
+          </div>
+          <span>Cambiar tema</span>
+        </button>
+        
+        <button class="btn btn-outline" id="langToggleMobile" aria-label="Cambiar idioma">
+          <i class="fas fa-globe"></i>
+          <span>Español / English</span>
+        </button>
+        
+        <a href="https://wa.me/+50576096102" target="_blank" rel="noopener" class="btn btn-primary" aria-label="Contactar por WhatsApp">
+          <i class="fab fa-whatsapp"></i>
+          <span>WhatsApp</span>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main id="main-content">
+    <!-- Hero Section -->
+    <section id="home" class="hero section">
+      <div class="container">
+        <div class="hero-content">
+          <span class="badge badge-primary">Disponible para nuevos proyectos</span>
+          <h1 class="hero-title reveal">Transformando ideas en <span class="text-gradient">experiencias digitales</span> excepcionales</h1>
+          <p class="hero-subtitle reveal reveal-delay-1">Soy <strong>NovaVisionWeb</strong>, desarrollador full-stack senior con 10+ años de experiencia. Especializado en crear soluciones web innovadoras, escalables y centradas en el usuario.</p>
+          
+          <div class="hero-actions reveal reveal-delay-2">
+            <a href="#projects" class="btn btn-primary btn-lg">
+              <i class="fas fa-rocket"></i>
+              <span>Ver proyectos destacados</span>
+            </a>
+            <a href="#contact" class="btn btn-outline btn-lg">
+              <i class="fas fa-calendar-check"></i>
+              <span>Agendar una consulta</span>
+            </a>
+          </div>
+          
+          <div class="hero-features reveal reveal-delay-3">
+            <div class="hero-feature">
+              <i class="fas fa-bolt"></i>
+              <span>Rendimiento óptimo</span>
+            </div>
+            <div class="hero-feature">
+              <i class="fas fa-shield-alt"></i>
+              <span>Seguridad robusta</span>
+            </div>
+            <div class="hero-feature">
+              <i class="fas fa-expand-arrows-alt"></i>
+              <span>Escalabilidad garantizada</span>
+            </div>
+            <div class="hero-feature">
+              <i class="fas fa-mobile-alt"></i>
+              <span>Responsive design</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Hero visual with floating elements -->
+      <div class="hero-visual">
+        <div class="particles-container" id="heroParticles"></div>
+      </div>
+    </section>
+
+    <!-- Logo Generator Section -->
+    <section class="logo-generator section-sm">
+  <div class="container">
+    <h2 class="logo-generator-title reveal">Generador de Logos Flotantes</h2>
+    <p class="logo-generator-subtitle reveal reveal-delay-1">Genera logos de tecnologías que flotarán por tu pantalla. Perfecto para visualizar tu stack tecnológico de forma dinámica.</p>
+    
+    <div class="logo-controls reveal reveal-delay-2">
+      <!-- Asegúrate de que todos estos IDs existan -->
+      <button class="btn btn-primary" id="generateVSCode">
+        <i class="fas fa-plus"></i>
+        <span>Generar VS Code</span>
+      </button>
+      <button class="btn btn-secondary" id="generateHTML">
+        <i class="fab fa-html5"></i>
+        <span>Generar HTML5</span>
+      </button>
+      <button class="btn btn-secondary" id="generateCSS">
+        <i class="fab fa-css3-alt"></i>
+        <span>Generar CSS3</span>
+      </button>
+      <button class="btn btn-secondary" id="generateJS">
+        <i class="fab fa-js-square"></i>
+        <span>Generar JavaScript</span>
+      </button>
+      <button class="btn btn-outline" id="generateRandom">
+        <i class="fas fa-random"></i>
+        <span>Aleatorio</span>
+      </button>
+      <button class="btn btn-outline" id="clearLogos">
+        <i class="fas fa-trash"></i>
+        <span>Limpiar todo</span>
+      </button>
+    </div>
+    
+    <div class="logo-canvas-container reveal reveal-delay-3">
+      <canvas id="logoCanvas" class="logo-canvas" width="1200" height="400"></canvas>
+      <div class="logo-canvas-controls">
+        <button class="btn btn-sm" id="pauseLogos">
+          <i class="fas fa-pause"></i>
+          <span>Pausar</span>
+        </button>
+        <button class="btn btn-sm" id="resumeLogos">
+          <i class="fas fa-play"></i>
+          <span>Reanudar</span>
+        </button>
+      </div>
+    </div>
+    
+    <div class="text-center mt-4 reveal reveal-delay-4">
+      <p class="text-muted">Actualmente hay <span id="logoCount">0</span> logos flotando en pantalla</p>
+    </div>
+  </div>
+</section>
+
+    <!-- About Section -->
+    <section id="about" class="section">
+      <div class="container">
+        <div class="text-center mb-5">
+          <h2 class="reveal">Acerca de mí</h2>
+          <p class="subtitle reveal reveal-delay-1">Desarrollador full-stack con pasión por crear soluciones tecnológicas que marcan la diferencia</p>
+        </div>
+        
+        <div class="grid grid-2 gap-4">
+          <div class="card reveal">
+            <h3>Mi filosofía de desarrollo</h3>
+            <p>Creo que el código bien escrito no es solo funcional, sino también elegante, mantenible y escalable. Me especializo en construir aplicaciones web modernas con arquitecturas robustas y mejores prácticas.</p>
+            <p>Con más de una década de experiencia, he trabajado en proyectos que van desde startups emergentes hasta empresas establecidas, siempre enfocado en entregar valor real a través de la tecnología.</p>
+            <div class="skill-tags mt-4">
+              <span class="tag">React & Vue.js</span>
+              <span class="tag">Node.js & Express</span>
+              <span class="tag">TypeScript</span>
+              <span class="tag">AWS & Azure</span>
+              <span class="tag">Docker & Kubernetes</span>
+              <span class="tag">MongoDB & PostgreSQL</span>
+            </div>
+          </div>
+          
+          <div class="card reveal reveal-delay-1">
+            <h3>¿Por qué trabajar conmigo?</h3>
+            <ul class="list-unstyled">
+              <li class="mb-3">
+                <i class="fas fa-check-circle text-success mr-2"></i>
+                <strong>Experiencia probada:</strong> 10+ años en desarrollo web full-stack
+              </li>
+              <li class="mb-3">
+                <i class="fas fa-check-circle text-success mr-2"></i>
+                <strong>Comunicación clara:</strong> Actualizaciones regulares y transparencia total
+              </li>
+              <li class="mb-3">
+                <i class="fas fa-check-circle text-success mr-2"></i>
+                <strong>Calidad garantizada:</strong> Código limpio, testeado y documentado
+              </li>
+              <li class="mb-3">
+                <i class="fas fa-check-circle text-success mr-2"></i>
+                <strong>Enfoque empresarial:</strong> Soluciones que generan ROI tangible
+              </li>
+              <li class="mb-3">
+                <i class="fas fa-check-circle text-success mr-2"></i>
+                <strong>Adaptabilidad:</strong> Me ajusto a tus necesidades y metodologías
+              </li>
+            </ul>
+          </div>
+        </div>
+        
+        <div class="about-stats reveal reveal-delay-2">
+          <div class="about-stat card">
+            <div class="about-stat-value">50+</div>
+            <div class="about-stat-label">Proyectos Completados</div>
+          </div>
+          <div class="about-stat card">
+            <div class="about-stat-value">10+</div>
+            <div class="about-stat-label">Años de Experiencia</div>
+          </div>
+          <div class="about-stat card">
+            <div class="about-stat-value">100%</div>
+            <div class="about-stat-label">Clientes Satisfechos</div>
+          </div>
+          <div class="about-stat card">
+            <div class="about-stat-value">24/7</div>
+            <div class="about-stat-label">Soporte Disponible</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="section bg-secondary">
+      <div class="container">
+        <div class="text-center mb-5">
+          <h2 class="reveal">Habilidades Técnicas</h2>
+          <p class="subtitle reveal reveal-delay-1">Stack tecnológico moderno y adaptable a cualquier proyecto</p>
+        </div>
+        
+        <div class="skills-categories">
+          <div class="skill-category reveal">
+            <h3 class="skill-category-title">
+              <i class="fas fa-code text-primary"></i>
+              <span>Frontend</span>
+            </h3>
+            <div class="skill-list">
+              <div class="skill-item">
+                <div class="skill-icon">
+                  <i class="fab fa-react"></i>
+                </div>
+                <span>React.js</span>
+              </div>
+              <div class="skill-item">
+                <div class="skill-icon">
+                  <i class="fab fa-vuejs"></i>
+                </div>
+                <span>Vue.js</span>
+              </div>
+              <div class="skill-item">
+                <div class="skill-icon">
+                  <i class="fab fa-angular"></i>
+                </div>
+                <span>Angular</span>
+              </div>
+              <div class="skill-item">
+                <div class="skill-icon">
+                  <i class="fab fa-js"></i>
+                </div>
+                <span>JavaScript ES6+</span>
+              </div>
+              <div class="skill-item">
+                <div class="skill-icon">
+                  <i class="fab fa-typescript"></i>
+                </div>
+                <span>TypeScript</span>
+              </div>
+              <div class="skill-item">
+                <div class="skill-icon">
+                  <i class="fab fa-html5"></i>
+                </div>
+                <span>HTML5</span>
+              </div>
+              <div class="skill-item">
+                <div class="skill-icon">
+                  <i class="fab fa-css3-alt"></i>
+                </div>
+                <span>CSS3 / Sass</span>
+              </div>
+              <div class="skill-item">
+                <div class="skill-icon">
+                  <i class="fab fa-bootstrap"></i>
+                </div>
+                <span>Bootstrap / Tailwind</span>
+              </div>
+            </div>
+          </div>
+          
+          <div class="skill-category reveal reveal-delay-1">
+            <h3 class="skill-category-title">
+              <i class="fas fa-server text-primary"></i>
+              <span>Backend</span>
+            </h3>
+            <div class="skill-list">
+              <div class="skill-item">
+                <div class="skill-icon">
+                  <i class="fab fa-node-js"></i>
+                </div>
+                <span>Node.js</span>
+              </div>
+              <div class="skill-item">
+                <div class="skill-icon">
+                  <i class="fab fa-python"></i>
+                </div>
+                <span>Python / Django</span>
+              </div>
+              <div class="skill-item">
+                <div class="skill-icon">
+                  <i class="fab fa-php"></i>
+                </div>
+                <span>PHP / Laravel</span>
+              </div>
+              <div class="skill-item">
+                <div class="skill-icon">
+                  <i class="fas fa-database"></i>
+                </div>
+                <span>MySQL / PostgreSQL</span>
+              </div>
+              <div class="skill-item">
+                <div class="skill-icon">
+                  <i class="fas fa-leaf"></i>
+                </div>
+                <span>MongoDB</span>
+              </div>
+              <div class="skill-item">
+                <div class="skill-icon">
+                  <i class="fas fa-fire"></i>
+                </div>
+                <span>Firebase</span>
+              </div>
+              <div class="skill-item">
+                <div class="skill-icon">
+                  <i class="fas fa-bolt"></i>
+                </div>
+                <span>GraphQL / REST APIs</span>
+              </div>
+            </div>
+          </div>
+          
+          <div class="skill-category reveal reveal-delay-2">
+            <h3 class="skill-category-title">
+              <i class="fas fa-tools text-primary"></i>
+              <span>DevOps & Herramientas</span>
+            </h3>
+            <div class="skill-list">
+              <div class="skill-item">
+                <div class="skill-icon">
+                  <i class="fab fa-docker"></i>
+                </div>
+                <span>Docker</span>
+              </div>
+              <div class="skill-item">
+                <div class="skill-icon">
+                  <i class="fab fa-aws"></i>
+                </div>
+                <span>AWS</span>
+              </div>
+              <div class="skill-item">
+                <div class="skill-icon">
+                  <i class="fab fa-git-alt"></i>
+                </div>
+                <span>Git / GitHub</span>
+              </div>
+              <div class="skill-item">
+                <div class="skill-icon">
+                  <i class="fas fa-code-branch"></i>
+                </div>
+                <span>CI/CD</span>
+              </div>
+              <div class="skill-item">
+                <div class="skill-icon">
+                  <i class="fas fa-chart-line"></i>
+                </div>
+                <span>Webpack / Vite</span>
+              </div>
+              <div class="skill-item">
+                <div class="skill-icon">
+                  <i class="fas fa-vial"></i>
+                </div>
+                <span>Jest / Cypress</span>
+              </div>
+              <div class="skill-item">
+                <div class="skill-icon">
+                  <i class="fas fa-terminal"></i>
+                </div>
+                <span>Linux / Bash</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="text-center mt-5 reveal reveal-delay-3">
+          <div class="card">
+            <h4>Metodologías de trabajo</h4>
+            <div class="d-flex justify-content-center flex-wrap gap-3 mt-3">
+              <span class="badge badge-primary">Agile / Scrum</span>
+              <span class="badge badge-primary">Test Driven Development</span>
+              <span class="badge badge-primary">Clean Architecture</span>
+              <span class="badge badge-primary">Microservicios</span>
+              <span class="badge badge-primary">Mobile First</span>
+              <span class="badge badge-primary">SEO Optimization</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section">
+      <div class="container">
+        <div class="text-center mb-5">
+          <h2 class="reveal">Proyectos Destacados</h2>
+          <p class="subtitle reveal reveal-delay-1">Una selección de mis trabajos más recientes y desafiantes</p>
+        </div>
+        
+        <div class="projects-filter reveal reveal-delay-1">
+          <button class="btn btn-sm active" data-filter="all">Todos</button>
+          <button class="btn btn-sm" data-filter="web">Web Apps</button>
+          <button class="btn btn-sm" data-filter="mobile">Mobile</button>
+          <button class="btn btn-sm" data-filter="ecommerce">E-commerce</button>
+          <button class="btn btn-sm" data-filter="dashboard">Dashboards</button>
+          <button class="btn btn-sm" data-filter="api">APIs</button>
+        </div>
+        
+        <div class="projects-grid">
+          <!-- Project 1 -->
+          <div class="project-card card reveal" data-category="web,dashboard">
+            <div class="project-image">
+              <div class="project-overlay">
+                <div class="project-tags">
+                  <span class="badge badge-primary">React</span>
+                  <span class="badge badge-primary">Node.js</span>
+                  <span class="badge badge-primary">MongoDB</span>
+                </div>
+              </div>
+              <i class="fas fa-chart-bar fa-3x"></i>
+            </div>
+            <div class="project-content">
+              <h4>Sistema de Analytics Empresarial</h4>
+              <p>Dashboard interactivo con visualización de datos en tiempo real, reportes personalizables y integración con múltiples fuentes de datos.</p>
+              <div class="d-flex justify-content-between align-items-center mt-4">
+                <div class="project-tags">
+                  <span class="badge">Full Stack</span>
+                  <span class="badge">Data Visualization</span>
+                </div>
+                <button class="btn btn-sm btn-outline project-view" data-project="1">Ver detalles</button>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Project 2 -->
+          <div class="project-card card reveal reveal-delay-1" data-category="ecommerce">
+            <div class="project-image">
+              <div class="project-overlay">
+                <div class="project-tags">
+                  <span class="badge badge-primary">Vue.js</span>
+                  <span class="badge badge-primary">Laravel</span>
+                  <span class="badge badge-primary">MySQL</span>
+                </div>
+              </div>
+              <i class="fas fa-shopping-cart fa-3x"></i>
+            </div>
+            <div class="project-content">
+              <h4>Plataforma E-commerce Multi-vendedor</h4>
+              <p>Marketplace completo con sistema de carrito, pagos en línea, panel de administración y perfiles de vendedores independientes.</p>
+              <div class="d-flex justify-content-between align-items-center mt-4">
+                <div class="project-tags">
+                  <span class="badge">E-commerce</span>
+                  <span class="badge">Payment Gateway</span>
+                </div>
+                <button class="btn btn-sm btn-outline project-view" data-project="2">Ver detalles</button>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Project 3 -->
+          <div class="project-card card reveal reveal-delay-2" data-category="mobile,web">
+            <div class="project-image">
+              <div class="project-overlay">
+                <div class="project-tags">
+                  <span class="badge badge-primary">React Native</span>
+                  <span class="badge badge-primary">Firebase</span>
+                  <span class="badge badge-primary">Redux</span>
+                </div>
+              </div>
+              <i class="fas fa-mobile-alt fa-3x"></i>
+            </div>
+            <div class="project-content">
+              <h4>Aplicación de Fitness Personalizado</h4>
+              <p>App móvil con seguimiento de ejercicios, planes de entrenamiento personalizados, integración con wearables y comunidad social.</p>
+              <div class="d-flex justify-content-between align-items-center mt-4">
+                <div class="project-tags">
+                  <span class="badge">Mobile App</span>
+                  <span class="badge">Health & Fitness</span>
+                </div>
+                <button class="btn btn-sm btn-outline project-view" data-project="3">Ver detalles</button>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Project 4 -->
+          <div class="project-card card reveal" data-category="api">
+            <div class="project-image">
+              <div class="project-overlay">
+                <div class="project-tags">
+                  <span class="badge badge-primary">Node.js</span>
+                  <span class="badge badge-primary">Express</span>
+                  <span class="badge badge-primary">PostgreSQL</span>
+                </div>
+              </div>
+              <i class="fas fa-network-wired fa-3x"></i>
+            </div>
+            <div class="project-content">
+              <h4>Sistema de Microservicios para FinTech</h4>
+              <p>Arquitectura de microservicios escalable con autenticación JWT, rate limiting, documentación Swagger y contenedores Docker.</p>
+              <div class="d-flex justify-content-between align-items-center mt-4">
+                <div class="project-tags">
+                  <span class="badge">API Design</span>
+                  <span class="badge">Microservices</span>
+                </div>
+                <button class="btn btn-sm btn-outline project-view" data-project="4">Ver detalles</button>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Project 5 -->
+          <div class="project-card card reveal reveal-delay-1" data-category="dashboard,web">
+            <div class="project-image">
+              <div class="project-overlay">
+                <div class="project-tags">
+                  <span class="badge badge-primary">Angular</span>
+                  <span class="badge badge-primary">TypeScript</span>
+                  <span class="badge badge-primary">D3.js</span>
+                </div>
+              </div>
+              <i class="fas fa-chart-pie fa-3x"></i>
+            </div>
+            <div class="project-content">
+              <h4>Dashboard de Business Intelligence</h4>
+              <p>Plataforma de análisis empresarial con gráficos interactivos, drag & drop de widgets, y exportación de reportes en múltiples formatos.</p>
+              <div class="d-flex justify-content-between align-items-center mt-4">
+                <div class="project-tags">
+                  <span class="badge">Data Analytics</span>
+                  <span class="badge">Business Intelligence</span>
+                </div>
+                <button class="btn btn-sm btn-outline project-view" data-project="5">Ver detalles</button>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Project 6 -->
+          <div class="project-card card reveal reveal-delay-2" data-category="web">
+            <div class="project-image">
+              <div class="project-overlay">
+                <div class="project-tags">
+                  <span class="badge badge-primary">Next.js</span>
+                  <span class="badge badge-primary">Tailwind CSS</span>
+                  <span class="badge badge-primary">GraphQL</span>
+                </div>
+              </div>
+              <i class="fas fa-blog fa-3x"></i>
+            </div>
+            <div class="project-content">
+              <h4>CMS para Publicaciones Técnicas</h4>
+              <p>Sistema de gestión de contenido optimizado para SEO, con editor en tiempo real, búsqueda avanzada y sistema de comentarios.</p>
+              <div class="d-flex justify-content-between align-items-center mt-4">
+                <div class="project-tags">
+                  <span class="badge">Content Management</span>
+                  <span class="badge">SEO Optimization</span>
+                </div>
+                <button class="btn btn-sm btn-outline project-view" data-project="6">Ver detalles</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="text-center mt-5 reveal reveal-delay-3">
+          <a href="#contact" class="btn btn-primary btn-lg">
+            <i class="fas fa-envelope"></i>
+            <span>Solicitar más casos de estudio</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="section bg-secondary">
+      <div class="container">
+        <div class="text-center mb-5">
+          <h2 class="reveal">Experiencia Profesional</h2>
+          <p class="subtitle reveal reveal-delay-1">Una trayectoria de crecimiento y logros en el desarrollo web</p>
+        </div>
+        
+        <div class="timeline">
+          <!-- Experience 1 -->
+          <div class="timeline-item reveal">
+            <div class="timeline-date">2022 - Presente</div>
+            <div class="timeline-content card">
+              <h4>Senior Full-Stack Developer</h4>
+              <h5>Tech Innovations Inc.</h5>
+              <p>Lideré el desarrollo de aplicaciones web empresariales utilizando React, Node.js y AWS. Implementé arquitecturas de microservicios que mejoraron la escalabilidad en un 300%.</p>
+              <div class="mt-3">
+                <span class="badge">React</span>
+                <span class="badge">Node.js</span>
+                <span class="badge">AWS</span>
+                <span class="badge">Docker</span>
+                <span class="badge">MongoDB</span>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Experience 2 -->
+          <div class="timeline-item reveal reveal-delay-1">
+            <div class="timeline-date">2020 - 2022</div>
+            <div class="timeline-content card">
+              <h4>Full-Stack Developer</h4>
+              <h5>Digital Solutions Agency</h5>
+              <p>Desarrollé más de 15 proyectos web para clientes internacionales, incluyendo e-commerces, dashboards y aplicaciones web progresivas (PWA).</p>
+              <div class="mt-3">
+                <span class="badge">Vue.js</span>
+                <span class="badge">Laravel</span>
+                <span class="badge">MySQL</span>
+                <span class="badge">REST APIs</span>
+                <span class="badge">PWA</span>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Experience 3 -->
+          <div class="timeline-item reveal reveal-delay-2">
+            <div class="timeline-date">2018 - 2020</div>
+            <div class="timeline-content card">
+              <h4>Frontend Developer</h4>
+              <h5>Creative Web Studio</h5>
+              <p>Especializado en la creación de interfaces de usuario responsivas y accesibles. Colaboré en el diseño y desarrollo de más de 30 sitios web para diversos sectores.</p>
+              <div class="mt-3">
+                <span class="badge">JavaScript</span>
+                <span class="badge">HTML5/CSS3</span>
+                <span class="badge">Sass</span>
+                <span class="badge">Bootstrap</span>
+                <span class="badge">jQuery</span>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Experience 4 -->
+          <div class="timeline-item reveal reveal-delay-3">
+            <div class="timeline-date">2016 - 2018</div>
+            <div class="timeline-content card">
+              <h4>Junior Web Developer</h4>
+              <h5>Startup Ventures</h5>
+              <p>Inicié mi carrera profesional desarrollando sitios web con WordPress y aplicaciones web básicas. Aprendí fundamentos de desarrollo full-stack y mejores prácticas.</p>
+              <div class="mt-3">
+                <span class="badge">WordPress</span>
+                <span class="badge">PHP</span>
+                <span class="badge">JavaScript</span>
+                <span class="badge">Git</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="text-center mt-5 reveal reveal-delay-4">
+          <a href="#contact" class="btn btn-outline btn-lg">
+            <i class="fas fa-file-download"></i>
+            <span>Descargar CV Completo</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section">
+      <div class="container">
+        <div class="text-center mb-5">
+          <h2 class="reveal">Contáctame</h2>
+          <p class="subtitle reveal reveal-delay-1">¿Tienes un proyecto en mente? Hablemos sobre cómo puedo ayudarte a hacerlo realidad</p>
+        </div>
+        
+        <div class="contact-grid">
+          <div class="reveal">
+            <h3 class="mb-4">Envíame un mensaje</h3>
+            <form id="contactForm" class="contact-form">
+              <div class="form-group">
+                <label for="name" class="form-label">Nombre completo</label>
+                <input type="text" id="name" class="form-control" placeholder="Tu nombre" required>
+              </div>
+              
+              <div class="form-group">
+                <label for="email" class="form-label">Correo electrónico</label>
+                <input type="email" id="email" class="form-control" placeholder="tu@email.com" required>
+              </div>
+              
+              <div class="form-group">
+                <label for="subject" class="form-label">Asunto</label>
+                <select id="subject" class="form-control custom-select" required>
+                  <option value="" disabled selected>Selecciona un asunto</option>
+                  <option value="web">Desarrollo Web</option>
+                  <option value="mobile">Aplicación Móvil</option>
+                  <option value="consulting">Consultoría Técnica</option>
+                  <option value="other">Otro</option>
+                </select>
+              </div>
+              
+              <div class="form-group">
+                <label for="message" class="form-label">Mensaje</label>
+                <textarea id="message" class="form-control" rows="5" placeholder="Describe tu proyecto o consulta..." required></textarea>
+              </div>
+              
+              <div class="form-group">
+                <button type="submit" class="btn btn-primary btn-lg w-100">
+                  <i class="fas fa-paper-plane"></i>
+                  <span>Enviar mensaje</span>
+                </button>
+              </div>
+              
+              <div id="formMessage" class="form-text text-center"></div>
+            </form>
+          </div>
+          
+          <div class="reveal reveal-delay-1">
+            <h3 class="mb-4">Información de contacto</h3>
+            <div class="contact-info">
+              <div class="contact-item">
+                <div class="contact-icon">
+                  <i class="fas fa-map-marker-alt"></i>
+                </div>
+                <div>
+                  <h5>Ubicación</h5>
+                  <p>Nicaragua (GMT-6)</p>
+                  <p class="text-muted">Trabajo remoto con clientes internacionales</p>
+                </div>
+              </div>
+              
+              <div class="contact-item">
+                <div class="contact-icon">
+                  <i class="fas fa-phone-alt"></i>
+                </div>
+                <div>
+                  <h5>Teléfono / WhatsApp</h5>
+                  <p>+505 7609 6102</p>
+                  <p class="text-muted">Disponible para llamadas y mensajes</p>
+                </div>
+              </div>
+              
+              <div class="contact-item">
+                <div class="contact-icon">
+                  <i class="fas fa-envelope"></i>
+                </div>
+                <div>
+                  <h5>Correo electrónico</h5>
+                  <p>contacto@novavisionweb.com</p>
+                  <p class="text-muted">Respuesta en menos de 24 horas</p>
+                </div>
+              </div>
+            </div>
+            
+            <div class="mt-5">
+              <h5 class="mb-3">Conecta conmigo</h5>
+              <div class="social-links">
+                <a href="https://github.com" target="_blank" rel="noopener" class="social-link" aria-label="GitHub">
+                  <i class="fab fa-github"></i>
+                </a>
+                <a href="https://linkedin.com" target="_blank" rel="noopener" class="social-link" aria-label="LinkedIn">
+                  <i class="fab fa-linkedin-in"></i>
+                </a>
+                <a href="https://twitter.com" target="_blank" rel="noopener" class="social-link" aria-label="Twitter">
+                  <i class="fab fa-twitter"></i>
+                </a>
+                <a href="https://codepen.io" target="_blank" rel="noopener" class="social-link" aria-label="CodePen">
+                  <i class="fab fa-codepen"></i>
+                </a>
+              </div>
+            </div>
+            
+            <div class="card mt-5">
+              <h5 class="mb-3">Disponibilidad</h5>
+              <p>Actualmente aceptando nuevos proyectos para:</p>
+              <ul class="mb-3">
+                <li>Desarrollo web full-stack</li>
+                <li>Consultoría técnica</li>
+                <li>Mentoría y code reviews</li>
+                <li>Colaboraciones a largo plazo</li>
+              </ul>
+              <div class="text-center">
+                <a href="https://calendly.com" target="_blank" rel="noopener" class="btn btn-primary">
+                  <i class="fas fa-calendar-alt"></i>
+                  <span>Agendar una llamada</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="footer-logo">NV</div>
+          <h3>NovaVisionWeb</h3>
+          <p>Desarrollador full-stack senior especializado en crear soluciones web innovadoras, escalables y centradas en el usuario.</p>
+          <div class="social-links">
+            <a href="https://github.com" target="_blank" rel="noopener" class="social-link" aria-label="GitHub">
+              <i class="fab fa-github"></i>
+            </a>
+            <a href="https://linkedin.com" target="_blank" rel="noopener" class="social-link" aria-label="LinkedIn">
+              <i class="fab fa-linkedin-in"></i>
+            </a>
+            <a href="https://twitter.com" target="_blank" rel="noopener" class="social-link" aria-label="Twitter">
+              <i class="fab fa-twitter"></i>
+            </a>
+            <a href="https://dribbble.com" target="_blank" rel="noopener" class="social-link" aria-label="Dribbble">
+              <i class="fab fa-dribbble"></i>
+            </a>
+            <a href="https://whatsapp.com" target="_blank" rel="noopener" class="social-link" aria-label="WhatsApp">
+              <i class="fab fa-whatsapp"></i>
+            </a>
+          </div>
+        </div>
+        
+        <div>
+          <h4 class="footer-title">Enlaces rápidos</h4>
+          <div class="footer-links">
+            <a href="#home" class="footer-link">Inicio</a>
+            <a href="#about" class="footer-link">Acerca de mí</a>
+            <a href="#skills" class="footer-link">Habilidades</a>
+            <a href="#projects" class="footer-link">Proyectos</a>
+            <a href="#experience" class="footer-link">Experiencia</a>
+            <a href="#contact" class="footer-link">Contacto</a>
+          </div>
+        </div>
+        
+        <div>
+          <h4 class="footer-title">Servicios</h4>
+          <div class="footer-links">
+            <a href="#" class="footer-link">Desarrollo Web</a>
+            <a href="#" class="footer-link">Aplicaciones Móviles</a>
+            <a href="#" class="footer-link">Consultoría Técnica</a>
+            <a href="#" class="footer-link">Mantenimiento Web</a>
+            <a href="#" class="footer-link">Optimización SEO</a>
+            <a href="#" class="footer-link">Mentoría</a>
+          </div>
+        </div>
+        
+        <div>
+          <h4 class="footer-title">Recursos</h4>
+          <div class="footer-links">
+            <a href="#" class="footer-link">Blog</a>
+            <a href="#" class="footer-link">Casos de Estudio</a>
+            <a href="#" class="footer-link">Portafolio</a>
+            <a href="#" class="footer-link">FAQ</a>
+            <a href="#" class="footer-link">Política de Privacidad</a>
+            <a href="#" class="footer-link">Términos de Servicio</a>
+          </div>
+        </div>
+      </div>
+      
+      <div class="footer-bottom">
+        <div class="footer-copyright">
+          &copy; 2026 NovaVisionWeb. Todos los derechos reservados.
+        </div>
+        <div class="footer-social">
+          <button class="theme-toggle" id="footerThemeToggle" aria-label="Cambiar tema">
+            <div class="theme-toggle-icons">
+              <i class="fas fa-moon"></i>
+              <i class="fas fa-sun"></i>
+            </div>
+          </button>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Project Modals -->
+  <div class="modal" id="projectModal">
+    <div class="modal-overlay" id="modalOverlay"></div>
+    <div class="modal-content">
+      <div class="modal-header">
+        <h3 id="modalTitle">Detalles del Proyecto</h3>
+        <button class="modal-close" id="modalClose" aria-label="Cerrar modal">
+          <i class="fas fa-times"></i>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div id="modalContent">
+          <!-- Content will be loaded dynamically -->
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button class="btn btn-outline" id="modalPrev">
+          <i class="fas fa-chevron-left"></i>
+          <span>Anterior</span>
+        </button>
+        <button class="btn btn-primary" id="modalVisit">
+          <i class="fas fa-external-link-alt"></i>
+          <span>Visitar proyecto</span>
+        </button>
+        <button class="btn btn-outline" id="modalNext">
+          <span>Siguiente</span>
+          <i class="fas fa-chevron-right"></i>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Toast Notifications Container -->
+  <div class="toast-container" id="toastContainer"></div>
+
+  <!-- JSON-LD Structured Data for SEO -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "NovaVisionWeb",
+    "url": "https://novavisionweb.com",
+    "image": "https://novavisionweb.com/images/profile.jpg",
+    "jobTitle": "Senior Full-Stack Developer",
+    "worksFor": {
+      "@type": "Organization",
+      "name": "Freelance"
+    },
+    "address": {
+      "@type": "PostalAddress",
+      "addressCountry": "NI"
+    },
+    "email": "contacto@novavisionweb.com",
+    "telephone": "+50576096102",
+    "sameAs": [
+      "https://github.com/novavisionweb",
+      "https://linkedin.com/in/novavisionweb",
+      "https://twitter.com/novavisionweb"
+    ],
+    "knowsAbout": [
+      "React.js",
+      "Vue.js",
+      "Node.js",
+      "TypeScript",
+      "JavaScript",
+      "HTML5",
+      "CSS3",
+      "AWS",
+      "Docker",
+      "MySQL",
+      "MongoDB",
+      "REST APIs",
+      "GraphQL",
+      "Web Development",
+      "Software Architecture"
+    ],
+    "hasOccupation": {
+      "@type": "Occupation",
+      "name": "Full-Stack Developer",
+      "description": "Desarrollador full-stack con más de 10 años de experiencia creando aplicaciones web modernas, escalables y centradas en el usuario."
+    }
+  }
+  </script>
+<script type="module" src="./assets/js/main.js"></script>
+</body>
+</html>
+        

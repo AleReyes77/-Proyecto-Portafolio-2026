@@ -1,0 +1,28 @@
+/* 7.2 About */
+.about-stats {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: var(--spacing-lg);
+  margin-top: var(--spacing-xl);
+}
+
+.about-stat {
+  text-align: center;
+  padding: var(--spacing-lg);
+}
+
+.about-stat-value {
+  font-size: var(--font-xxxl);
+  font-weight: 800;
+  background: var(--gradient-primary);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  line-height: 1;
+  margin-bottom: var(--spacing-sm);
+}
+
+.about-stat-label {
+  font-size: var(--font-md);
+  color: var(--text-secondary);
+}
